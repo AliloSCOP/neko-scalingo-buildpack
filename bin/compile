@@ -35,12 +35,12 @@ lix install haxe 4.0.5
 lix use haxe 4.0.5
 lix download
 
-echo "--> lix  install frontend"
-cd $BUILD_DIR/frontend
-lix scope create
-lix use haxe 4.0.5
-lix download
-npm install
+#echo "--> lix  install frontend"
+#cd $BUILD_DIR/frontend
+#lix scope create
+#lix use haxe 4.0.5
+#lix download
+#npm install
 
 echo "--> copy config"
 cd $BUILD_DIR
@@ -50,9 +50,9 @@ echo "--> haxe build backend"
 cd $BUILD_DIR/backend
 haxe build.hxml -D i18n_generation;
 
-echo "--> haxe build frontend"
-cd $BUILD_DIR/frontend
-haxe build.hxml
+#echo "--> haxe build frontend"
+#cd $BUILD_DIR/frontend
+#haxe build.hxml
 
 echo "--> generate mtt files"
 cd $BUILD_DIR/lang/fr/tpl/
