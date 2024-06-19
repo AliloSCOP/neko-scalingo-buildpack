@@ -60,6 +60,9 @@ neko ../../../backend/temploc2.n -macros macros.mtt -output ../tmp/ *.mtt */*.mt
 
 cd $BUILD_DIR
 
+echo "--> create apache log directory"
+mkdir $BUILD_DIR/logs
+
 echo "--> copy config file"
 cp $BUILD_DIR/config.xml.dist config-raw.xml
 
